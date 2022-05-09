@@ -14,7 +14,7 @@ Credit risk classification is used to identify the risks associated with loans. 
 
 * Machine Learning Model 1: LogisticRegression
   * Logistics regression on original scaled data was used. Below is the classification report which clearly shows that the model is very biased to 1. Accuracy was at 99% but the imbalance of variables clearly makes this model not recommendable.
-      precision    recall  f1-score   support
+                precision    recall  f1-score   support
 
            0       1.00      0.99      1.00     18765
            1       0.84      0.98      0.91       619
@@ -25,7 +25,15 @@ weighted avg       0.99      0.99      0.99     19384
 
 
 * Machine Learning Model 2: RandomOverSampler
-  * RandomOver Sampler on scaled data was used. Below is the classification report which shows that the f1 score is very biased to 0. Accuracy remains at 99%. Although the value counts shows balanced variables, the f1 score is very biased. Hence, this model is not recommended.
+  * RandomOver Sampler on scaled data was used. Below is the classification report which shows that f1 score is very biased to 1. Accuracy is at 98%. Although the value counts shows balanced variables, the f1 score is very biased. Hence, this model is not recommended.
+                   pre       rec       spe        f1       geo       iba       sup
+
+          0       1.00      0.99      0.98      1.00      0.99      0.98     18765
+          1       0.84      0.98      0.99      0.91      0.99      0.98       619
+
+avg / total       0.99      0.99      0.98      0.99      0.99      0.98     19384
+
+
 
 ## Summary
 
