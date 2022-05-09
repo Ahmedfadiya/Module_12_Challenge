@@ -37,6 +37,6 @@ avg / total       0.99      0.99      0.98      0.99      0.99      0.98     193
 
 ## Summary
 
-From the both machine learning models, I conclude that both are not fit for decision making process. I strongly feel that random sampling has a copied version of the same data to balance the variables - hence this is unfit.
+From both the machine learning models, I conclude that both are not fit for decision making process. I strongly feel that random sampling has a copied version of the same data to balance the variables - hence this is unfit.
 My strong recommendation would be to try Smoteenn.
 
